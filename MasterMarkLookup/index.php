@@ -7,84 +7,48 @@
 </head>
 <script language="javascript">
 	function checkInput() {
-		var txtName = document.MyForm.tttc;
+		var txtName = document.frmMain.cmt;
 		if (txtName.value == ""){
-			alert("Bạn phải nhập họ tên hoặc số báo danh.");
+			alert("Thí sinh nhập chính xác số chứng minh nhân dân.");
 			txtName.focus();		
 			return false;
 		}
 	}
-	function String sanitizing(String s){
-		if(s == null){
-			return null;
-		}
-		String str = new String();
-        for (int i = 0; i < s.length(); i++) {
-            switch (s.charAt(i)) {
-            case '<':
-                str += "&lt;"; 
-                break;
-            case '>':
-                str += "&gt;";
-                break;
-            case '&':
-                str += "&amp;";
-                break;
-            case '\'':
-                str += "&#39;";
-                break;
-            case '\"':
-                str += "&quot;";
-                break;
-            default:
-                str += s.charAt(i);
-            }
-        }
-        return str.toString();
-	}
+	function isNumberKey(evt){
+       var charCode = (evt.which) ? evt.which : event.keyCode;
+       if(charCode == 59 || charCode == 46)
+        return true;
+       if (charCode > 31 && (charCode < 48 || charCode > 57))
+          return false;
+       return true;
+    }
 </script>
 <body>
 <div id="web">
 	<div id="header">
-    	<div id="logo">
-        	<img src="logo.jpg" height="160" width="160"/>    	
-        </div>
-        <div id="info">
-        	<h1 align="center">TRƯỜNG ĐẠI HỌC HẢI DƯƠNG</h1>
-            <h3 align="center">KẾT QUẢ TUYỂN SINH LIÊN THÔNG CAO ĐẰNG - ĐẠI HỌC NĂM 2015</h3>
+    	<div id="logo"><img src="logo.jpg" height="150px" width="150px"></div>
+        <div id="school">
+        	<font face="Tahoma, Geneva, sans-serif" size="+2" color="#0000FF"><strong>TRƯỜNG ĐẠI HỌC HẢI DƯƠNG</strong></font><br><br>
+       <font face="Tahoma, Geneva, sans-serif" size="+1" color="#FF00FF"><strong>KẾT QUẢ TUYỂN SINH SAU ĐẠI HỌC 2016 (ĐỢT 1)</strong></font>
         </div>
     </div>
     <div id="center">
-        	<form id="MyForm" name="MyForm" method="post" action="result.php">
-        		  <div id="top1">
-                  	<table align="center">
-                        <tr>
-                        	<td id="txt">Tra cứu thông tin theo</td>
-                            <td>
-                            	<SELECT name="sbdht" id="sbdht">
-			  						<option value="1" selected>Số báo danh</option>
-			  						<option value="2">Họ và tên</option>
-								</SELECT>
-                            </td>
-                        </tr>
-                        <tr>
-                        	<td id="txt">Nhập thông tin tra cứu</td>
-                            <td><input type="text" name="tttc" id="tttc"></td>
-                        </tr>
-                         <tr>
-                            <td>&nbsp;</td>
-                            <td align="center">
-                            	<input type="submit" name="submit" id="txt" value="Tra Cứu" onClick="return checkInput()">
-                            	<input type="reset" id="txt" name="reset" value="Làm lại">
-                            </td>
-                        </tr>
-                    </table>
+        	<form id="frmMain" name="frmMain" method="post" action="result.php">
+            <div id="information">
+        		  <div id="info"> Số chứng minh nhân dân </div>
+                  <div id="personal">
+                  	<input type="text" id = "cmt" name="cmt" onKeyPress="return isNumberKey(event)">
         		  </div>
+                  <div id="lookup">
+                    <input type="submit" id="submit" name="submit" value="Tra cứu" onClick="return checkInput()" class="button">
+                    <input type="reset" id="reset" name="reset" value="Làm lại" class="button">
+                  </div>
+            </div>
        		</form>
         </div>
     <div id="footer">
-    	Developed by Nguyễn Xuân Minh, 2016, Hai Duong Unversity, Tel:(03203)861.249, Fax: (03203)861.249, Email: uhdminhnguyenxuan.edu@@gmail.com
-    <div>
+    	Developed by Nguyen Xuan Minh, 2016, Unversity of Hai Duong, Tel: (03203)710.919, Email: uhdminhnguyenxuan.edu@gmail.com
+        <div>
 </div>
 </body>
 </html>

@@ -1,79 +1,141 @@
 @charset "utf-8";
 /* CSS Document */
+*{
+	padding:0px;
+	margin:0px;
+}
 
-
-h1{
-	color:#99CCFF;
-	font-family:Tahoma;
-}
-h3{
-	color:#0000DD;
-	font-family:Tahoma;
-}
-body {
-	background-color: #FFFFFF;
-}
-#text{
-	font:Tahoma, Geneva, sans-serif;
-	font-size:14px;
-}
-#p{
-	color:#FF33FF;
-}
 #web{
+	margin:auto;
 	width:1024px;
 	border:1px solid #33FF00;
-	margin:5px auto;
+}
+#web_result{
+	margin:auto;
+	width:1024px;
+	border:1px solid #33FF00;
+	height:675px
+}
+#header{
+	width:1024px;
+	height:80px;
+	margin-top:10px;
 }
 #logo{
-	margin-left:20px;
-	margin-top:10px;
+	padding-left:20px;
 	width:160px;
 	height:160px;
 	float:left;
 }
-#top1{
-	width:750px;
-	height:200px;
-	padding-left:60px ;
-	padding-top:20px;
+#school{
+	padding:20px;
+	width:800px;
+	height:150px;
+	float:left;
+	text-align:center;
 }
-#sbdht{
-	height:25px;
-	width:205px;
-	margin:2px;
-}
-#tttc{
-	height:17px;
-	width:200px;
-	margin:2px;
-}
-#txt{
-	font-family:Tahoma;
-	font-size:14px
-}
-
 #center{
-	width:1024px;
-	height:440px;
-	margin-top:200px;
+	padding:30px;
+	width:963px;
+	height:385px;
+	margin-top:100px;
 	background-color:#E1FFFF;
 }
+#center_result{
+	width:1023px;
+	height:300px;
+	margin-top:128px;
+	background-color:#E1FFFF;
+}
+#cmt{
+	height:20pt;
+	width:250px;
+	font-size:12pt;
+	font-family:Tahoma, Geneva, sans-serif;
+	border:none;
+	color:#00F;
+}
+#information{
+	margin:auto;
+	height:40px;
+	width:1024;
+}
+#info{
+	font-size:14pt;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#F0F;
+	width:230px;
+	float:left;
+	padding-left:230px;
+	padding-top:2px;
+}
+#personal{
+	text-align:center;
+	font-size:14px;
+	font-family:Tahoma, Geneva, sans-serif;
+	width:250px;
+	float:right;
+	padding-right:250px
+}
+#comment{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:15px;
+	color:#00F;
+	text-align:center;
+}
+.button {
+    background-color: #e7e7e7; color: black;
+    border: none;
+    color: #36F;
+    padding:10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+#lookup{
+	width:963px;
+	padding-top:50px;
+	padding-left:463px;
+}
+#note{
+	width:1000px;
+}
+#note p{
+	color:#F0F;
+	font-size:14px;
+	font-family:Tahoma, Geneva, sans-serif;
+	margin-top:10px;
+}
+#candiate_info{
+	margin:0px auto;
+	width:1024px;
+	margin-bottom:15px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	padding:3px;
+	color:#00F;
+}
 #footer{
-	margin-top:20px auto;
+	margin-top:30px auto;
 	background-color:#FFC1FF;
 	height:40px;
-	width:1023px;
+	width:1024px;
 	text-align:center;
 	line-height:40px;
 	color:#0000CC;
-	border:1px solid #00CC33; 
 	font-family:Tahoma;
 	font-size:12px;
 }
-#info{
-	margin:20px;
-	height:100px;
-	width:750px;
-	float:left;
+#footer_result{
+	margin-top:36px;
+	background-color:#FFC1FF;
+	height:40px;
+	width:1024px;
+	text-align:center;
+	line-height:40px;
+	color:#0000CC;
+	font-family:Tahoma;
+	font-size:12px;
 }
