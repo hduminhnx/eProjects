@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1{
+	color:#99CCFF;
+	font-family:Tahoma;
+}
+h3{
+	color:#0000DD;
+	font-family:Tahoma;
+}
+body {
+	background-color: #FFFFFF;
+}
+#text{
+	font:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+}
+#p{
+	color:#FF33FF;
+}
+#web{
+	width:1024px;
+	border:1px solid #33FF00;
+	margin:5px auto;
+}
+#logo{
+	margin-left:20px;
+	margin-top:10px;
+	width:160px;
+	height:160px;
+	float:left;
+}
+#top1{
+	width:750px;
+	height:200px;
+	padding-left:60px ;
+	padding-top:20px;
+}
+#sbdht{
+	height:25px;
+	width:205px;
+	margin:2px;
+}
+#tttc{
+	height:17px;
+	width:200px;
+	margin:2px;
+}
+#txt{
+	font-family:Tahoma;
+	font-size:14px
+}
+
+#center{
+	width:1024px;
+	height:440px;
+	margin-top:200px;
+	background-color:#E1FFFF;
+}
+#footer{
+	margin-top:20px auto;
+	background-color:#FFC1FF;
+	height:40px;
+	width:1023px;
+	text-align:center;
+	line-height:40px;
+	color:#0000CC;
+	border:1px solid #00CC33; 
+	font-family:Tahoma;
+	font-size:12px;
+}
+#info{
+	margin:20px;
+	height:100px;
+	width:750px;
+	float:left;
+}
